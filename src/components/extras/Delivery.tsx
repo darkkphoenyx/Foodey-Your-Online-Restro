@@ -17,7 +17,7 @@ export const Delivery = () => {
         <div className="md:col-span-4 flex justify-center">
           <img
             className="h-64 md:h-80 lg:h-96 object-contain"
-            src="/assets/delivery-guy.png"
+            src="/assets/delivery-guy.webp"
             alt="delivery man"
           />
         </div>

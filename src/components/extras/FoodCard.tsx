@@ -107,7 +107,7 @@ export const FoodCard = () => {
           {cards.map((item) => (
             <li
               key={item.id}
-              className="w-full sm:w-[280px] p-5 rounded-2xl bg-white shadow-lg border border-gray-300"
+              className="w-full sm:w-[280px] p-5 rounded-2xl bg-white shadow-lg border border-gray-300 hover:-translate-y-3 transition-all"
             >
               <div className="flex justify-between items-center mb-4">
                 {item.image ? (

@@ -34,7 +34,7 @@ export const Navbar = () => {
               to={"/"}
               className="font-extrabold text-4xl text-[--primary-text-color] italic"
             >
-              Foodie
+              Foodey
             </Link>
           </div>
           <div className="nav-elements">

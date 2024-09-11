@@ -26,10 +26,10 @@ export const Hero = () => {
         <div className="col-span-12 md:col-span-6 w-full z-10">
           <h1 className="text-7xl font-extrabold italic">
             Welcome to <br />
-            <span className="text-[--primary-text-color]">Foodie</span>
+            <span className="text-[--primary-text-color]">Foodey</span>
           </h1>
           <img
-            className="absolute h-6 top-44 -z-10"
+            className="absolute h-6 top-52 -z-10"
             src="/assets/brush3.webp"
             alt="brush stroke"
           />

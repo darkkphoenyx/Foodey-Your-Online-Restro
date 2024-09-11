@@ -12,7 +12,7 @@ export default function ImageSlider() {
   ];
 
   return (
-    <div className="bg-[url(/assets/brush2.webp)] bg-no-repeat bg-cover bg-center text-white py-8">
+    <section className="bg-[url(/assets/brush2.webp)] bg-no-repeat bg-cover bg-center text-white py-8">
       <Marquee
         className="h-max overflow-hidden gap-4"
         speed={50}
@@ -31,6 +31,6 @@ export default function ImageSlider() {
           </div>
         ))}
       </Marquee>
-    </div>
+    </section>
   );
 }

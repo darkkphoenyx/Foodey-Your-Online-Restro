@@ -76,9 +76,9 @@ export const AboutFoods = () => {
             />
           </div>
 
-          <div className="col-span-12 md:col-span-6 w-full z-10">
+          <div className="col-span-12 md:col-span-6 w-full z-10 sm:text-center lg:text-start">
             <h1 className="text-6xl md:text-7xl font-extrabold italic">
-              About <span className="text-[--primary-text-color]">Foodie</span>
+              About <span className="text-[--primary-text-color]">Foodey</span>
             </h1>
             <p className="text-lg mt-4 mb-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.

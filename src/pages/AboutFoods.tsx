@@ -21,11 +21,12 @@ export const AboutFoods = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Exercitationem, cumque id! Accusantium perferendis laborum error
               illum? Aliquid doloribus sapiente quidem atque a aut, culpa eos
-              cupiditate? Id fugiat iure mollitia?
+              cupiditate?
               <br />
               <br />
-              consectetur adipisicing elit. Esse aliquid quo autem. Impedit,
-              quod inventore. Lorem ipsum dolor sit amet,
+              Id fugiat iure mollitia? consectetur adipisicing elit. Esse
+              aliquid quo autem. Impedit, quod inventore. Lorem ipsum dolor sit
+              amet,
             </p>
             <ul>
               <li className="flex items-center gap-2 pb-4">

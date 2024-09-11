@@ -1,20 +1,83 @@
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
+const items = [
+  {
+    id: 1,
+    foodName: "Pasta",
+    discount: "20%",
+    margin: "-right-10",
+    price: "Rs.119",
+    image: "/assets/pasta.webp",
+    description: "On First Order",
+    bgColor: "bg-[--primary-text-color]",
+  },
+  {
+    id: 2,
+    foodName: "Burger",
+    discount: "25%",
+    margin: "-right-20",
+    price: "Rs.149",
+    image: "/assets/burger.webp",
+    description: "On Fast Order",
+    bgColor: "bg-black",
+  },
+  {
+    id: 3,
+    foodName: "Combo",
+    discount: "35%",
+    margin: "-right-10",
+    price: "Rs.299",
+    image: "/assets/combo.webp",
+    description: "On Fast Order",
+    bgColor: "bg-[--accent-color]",
+  },
+];
+
 export const AboutFoods = () => {
   return (
     <>
-      <section>
-        <div className="py-12 container mx-auto grid grid-cols-12 items-center overflow-hidden relative">
+      <section className="container mx-auto text-white px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 py-12 ">
+          {items.map((item) => (
+            <div
+              key={item.id}
+              className={`${item.bgColor} w-full overflow-hidden relative h-56 flex flex-col justify-center pl-4`}
+            >
+              <img
+                className={`absolute h-64 ${item.margin}`}
+                src={item.image}
+                alt={item.foodName}
+              />
+              <h1 className="text-4xl font-extrabold italic">
+                {item.foodName}
+              </h1>
+              <p className="mt-4">
+                Get a <span className="font-extrabold">{item.discount}</span>{" "}
+                discount <br />
+                {item.description}
+              </p>
+              <p className="mt-4 text-4xl font-extrabold">{item.price}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* About Section */}
+        <div className="py-12 grid grid-cols-1 md:grid-cols-12 items-center gap-8 text-black">
           <div className="col-span-12 md:col-span-6 items-center flex justify-center relative">
-            <img className="z-10" src="/assets/combo2.png" alt="hero picture" />
+            <img
+              className="z-10"
+              src="/assets/combo2.webp"
+              alt="hero picture"
+            />
             <img
               className="absolute overflow-hidden top-14"
-              src="/assets/brush.png"
+              src="/assets/brush.webp"
               alt="hero background"
             />
           </div>
+
           <div className="col-span-12 md:col-span-6 w-full z-10">
-            <h1 className="text-7xl font-extrabold italic">
+            <h1 className="text-6xl md:text-7xl font-extrabold italic">
               About <span className="text-[--primary-text-color]">Foodie</span>
             </h1>
             <p className="text-lg mt-4 mb-4">
@@ -30,22 +93,22 @@ export const AboutFoods = () => {
             </p>
             <ul>
               <li className="flex items-center gap-2 pb-4">
-                <CheckCircleIcon style={{ color: "red" }}></CheckCircleIcon>
+                <CheckCircleIcon style={{ color: "red" }} />
                 Delicious & Healthy Foods
               </li>
               <li className="flex items-center gap-2 pb-4">
-                <CheckCircleIcon style={{ color: "red" }}></CheckCircleIcon>
+                <CheckCircleIcon style={{ color: "red" }} />
                 Best Price & Offers
               </li>
               <li className="flex items-center gap-2 pb-4">
-                <CheckCircleIcon style={{ color: "red" }}></CheckCircleIcon>
+                <CheckCircleIcon style={{ color: "red" }} />
                 Made By Fresh Ingredients
               </li>
             </ul>
-            <button className="mt-4 text-[--black] bg-[--accent-color] px-4 py-2 rounded-3xl text-lg font-medium hover:text-[--accent-color] hover:bg-white border border-[--accent-color] transition-all active:translate-y-0.5 mr-4">
+            <button className="mt-4 text-[--black] bg-[--accent-color] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-[--accent-color] hover:bg-white border border-[--accent-color] transition-all active:translate-y-0.5 mr-4">
               Order Now
             </button>
-            <button className="text-[--black] bg-[--white] px-4 py-2 rounded-3xl text-lg font-medium hover:text-white hover:bg-black border border-[--black] transition-all active:translate-y-0.5">
+            <button className="text-[--black] bg-[--white] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-white hover:bg-black border border-[--black] transition-all active:translate-y-0.5">
               Read More
             </button>
           </div>

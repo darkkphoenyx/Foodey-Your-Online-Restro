@@ -7,7 +7,7 @@ export const Navbar = () => {
     <>
       <section className="bg-white/85 h-[16vh] sticky top-0 z-50">
         <div className="banner border-b border-gray-400">
-          <div className=" container mx-auto banner flex items-center justify-between py-1">
+          <div className=" container mx-auto banner flex items-center justify-between py-1 px-10">
             <div className="left-section ">
               <p className="flex items-center gap-1">
                 <QueryBuilderIcon fontSize="small"></QueryBuilderIcon> Mon-Fri:
@@ -28,7 +28,7 @@ export const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="nav container mx-auto py-3 flex justify-between items-center">
+        <div className="nav container mx-auto py-3 flex justify-between items-center px-10">
           <div className="logo">
             <Link
               to={"/"}
@@ -72,7 +72,7 @@ export const Navbar = () => {
                 <LocalMallIcon fontSize="small"></LocalMallIcon>
               </span>
             </button>
-            <button className="text-[--third-text-color] bg-[--primary-color] px-4 py-2  rounded-3xl text-lg font-medium hover:text-[--primary-text-color] hover:bg-white border border-[--primary-color] transition-all active:translate-y-0.5">
+            <button className="text-[--third-text-color] bg-[--primary-color] px-4 py-2  rounded-3xl text-lg font-semibold hover:text-[--primary-text-color] hover:bg-white border border-[--primary-color] transition-all active:translate-y-0.5">
               Order Online
             </button>
           </div>

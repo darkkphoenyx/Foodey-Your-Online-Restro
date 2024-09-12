@@ -65,7 +65,7 @@ export const AboutFoods = () => {
         <div className="py-12 grid grid-cols-1 md:grid-cols-12 items-center gap-8 text-black">
           <div className="col-span-12 md:col-span-6 items-center flex justify-center relative">
             <img
-              className="z-10"
+              className="z-10 hover:scale-105 transition-all"
               src="/assets/combo2.webp"
               alt="hero picture"
             />

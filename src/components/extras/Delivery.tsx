@@ -13,7 +13,6 @@ export const Delivery = () => {
           </p>
         </div>
 
-        {/* Image Section */}
         <div className="md:col-span-4 flex justify-center">
           <img
             className="h-64 md:h-80 lg:h-96 object-contain"
@@ -23,8 +22,10 @@ export const Delivery = () => {
         </div>
 
         {/* Right Section - Text */}
-              <div className="md:col-span-4 text-black text-center
-         lg:text-end">
+        <div
+          className="md:col-span-4 text-black text-center
+         lg:text-end"
+        >
           <h1 className="text-4xl md:text-6xl font-extrabold italic leading-tight">
             Order Online <br /> and Get Fast <br /> Delivery
           </h1>

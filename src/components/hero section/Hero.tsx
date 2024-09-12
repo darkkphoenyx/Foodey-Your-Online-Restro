@@ -46,7 +46,7 @@ export const Hero = () => {
           </button>
         </div>
         <div className="col-span-12 md:col-span-6 items-center flex justify-center relative">
-          <img className="z-10" src="/assets/burger.webp" alt="hero picture" />
+          <img className="z-10 hover:scale-105 transition-all" src="/assets/burger.webp" alt="hero picture" />
           <img
             className="absolute overflow-hidden"
             src="/assets/brush.webp"

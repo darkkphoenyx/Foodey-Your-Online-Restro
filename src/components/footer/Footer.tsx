@@ -12,14 +12,14 @@ export const Footer = () => {
           <div className="logo">
             <Link
               to={"/"}
-              className="font-extrabold text-4xl text-[--primary-text-color] italic"
+              className="font-extrabold text-5xl text-[--primary-text-color] italic"
             >
               Foodey
             </Link>
           </div>
           <div className="subsciption details">
-            <h3 className="text-3xl font-bold ">Subscription News</h3>
-            <p className="">Subscribe to the weekly newslatter.</p>
+            <h3 className="text-2xl font-bold ">Subscription News</h3>
+            <p className="text-sm">Subscribe to our newsletter.</p>
           </div>
           <div className="email-section flex gap-4 flex-wrap">
             <input
@@ -103,6 +103,29 @@ export const Footer = () => {
                 foodienepal@gmail.com
               </li>
             </ul>
+          </div>
+        </div>
+
+        <hr />
+        <div className="flex justify-between items-center container mx-auto px-10 py-4">
+          <div>
+            <h1 className="hover:underline hover:text-[--primary-text-color] cursor-pointer">
+              Copyrights © 2024 Foodey Restro. All rights Reserved
+            </h1>
+          </div>
+          <div className="flex gap-2">
+            <Link
+              className="border-r border-black pr-2 hover:underline hover:text-[--primary-text-color]"
+              to={"/"}
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              className="hover:underline hover:text-[--primary-text-color]"
+              to={"/"}
+            >
+              Terms of Use
+            </Link>
           </div>
         </div>
       </div>

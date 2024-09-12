@@ -39,7 +39,7 @@ export default function Testimonials() {
         {reviews.map((item) => (
           <li
             key={item.id}
-            className="flex justify-center w-full sm:w-auto hover:-translate-y-3 transition-all"
+            className="flex justify-center w-full sm:w-auto hover:-skew-y-3 hover:skew-x-3 transition-all cursor-pointer"
           >
             <div className="review border rounded-2xl border-gray-200 p-4 shadow-lg bg-white px-6 sm:px-10 w-full sm:w-[500px]">
               <div className="rating flex items-center text-gray-500 mb-4">

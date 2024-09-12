@@ -4,21 +4,21 @@ const cards = [
     title: "Spicy Burger",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ducimus.",
-    image: "/assets/gallary-burger.webp",
+    image: "/assets/gallery-burger.webp",
   },
   {
     id: 2,
     title: "Chowmein",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ducimus.",
-    image: "/assets/gallary-chowmein.webp",
+    image: "/assets/gallery-chowmein.webp",
   },
   {
     id: 3,
     title: "Pizza",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ducimus.",
-    image: "/assets/gallary-pizza.webp",
+    image: "/assets/gallery-pizza.webp",
   },
 ];
 
@@ -45,9 +45,15 @@ export const FoodNews = () => {
           {cards.map((item) => (
             <li
               key={item.id}
-              className="w-[385px] rounded-2xl pb-4  shadow-lg border border-gray-300 hover:-translate-y-3 transition-all"
+              className="w-[385px] rounded-2xl pb-4  shadow-lg border border-gray-300 "
             >
-              <img className="rounded-t-2xl" src={item.image} alt="photo" />
+              <div className="overflow-hidden rounded-t-2xl">
+                <img
+                  className="rounded-t-2xl hover:scale-110 transition-all"
+                  src={item.image}
+                  alt="photo"
+                />
+              </div>
               <div className="details mt-4 pl-4">
                 <h1 className="text-2xl  font-extrabold italic">
                   {item.title}

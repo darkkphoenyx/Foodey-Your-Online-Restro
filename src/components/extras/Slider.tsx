@@ -4,11 +4,14 @@ export default function ImageSlider() {
   const items = [
     { src: "/assets/burger2.webp", name: "Burger" },
     { src: "/assets/fries.webp", name: "Fries" },
+    { src: "/assets/chowmein.webp", name: "Chowmein" },
     { src: "/assets/sandwich.webp", name: "Sandwich" },
+    { src: "/assets/butterChicken.webp", name: "Butter Chicken" },
     { src: "/assets/colddrink.webp", name: "Cold Drink" },
     { src: "/assets/pasta.webp", name: "Pasta" },
     { src: "/assets/combo.webp", name: "Combo" },
     { src: "/assets/pizza.webp", name: "Pizza" },
+    { src: "/assets/noodles.webp", name: "Noodles" },
   ];
 
   return (
@@ -20,14 +23,13 @@ export default function ImageSlider() {
         gradient={false} // Disables gradient for a continuous slider effect
       >
         {items.map((item, index) => (
-          <div key={index} className="mx-4 text-center">
+          <div key={index} className="mx-8 text-center">
             <img
               src={item.src}
               alt={item.name}
-              className="h-40 w-auto object-contain hover:scale-110"
+              className="h-32 w-auto object-contain hover:scale-110 transition-all"
             />
             <p className="text-xl text-black font-bold mt-2">{item.name}</p>{" "}
-            {/* Item name below the image */}
           </div>
         ))}
       </Marquee>

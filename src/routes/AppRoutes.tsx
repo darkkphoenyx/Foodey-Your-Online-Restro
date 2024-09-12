@@ -9,7 +9,6 @@ export default function AppRoutes() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Using requestAnimationFrame to ensure smooth scrolling
       window.requestAnimationFrame(() => {
         window.scrollTo({
           top: 0,
@@ -18,19 +17,15 @@ export default function AppRoutes() {
       });
     };
 
-    // Call handleScroll immediately
     handleScroll();
 
-    // Optional: Add a small delay if needed
     const timer = setTimeout(handleScroll, 100);
 
     return () => clearTimeout(timer);
   }, [location]);
 
-  // List of paths where you want to hide Navbar and Footer
   const noNavbarFooterRoutes = ["/login", "/register"];
 
-  // Check if the current path is in the list
   const hideNavbarFooter = noNavbarFooterRoutes.includes(location.pathname);
 
   return (

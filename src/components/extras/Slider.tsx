@@ -20,7 +20,7 @@ export default function ImageSlider() {
         className="h-max overflow-hidden gap-4"
         speed={50}
         pauseOnHover={true}
-        gradient={false} // Disables gradient for a continuous slider effect
+        gradient={false}
       >
         {items.map((item, index) => (
           <div key={index} className="mx-8 text-center">

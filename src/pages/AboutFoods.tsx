@@ -41,7 +41,7 @@ export const AboutFoods = () => {
           {items.map((item) => (
             <div
               key={item.id}
-              className={`${item.bgColor} w-full overflow-hidden relative h-56 flex flex-col justify-center pl-4`}
+              className={`${item.bgColor} w-full overflow-hidden relative h-56 flex flex-col justify-center pl-4 hover:-translate-y-4 transition-all hover:scale-105 cursor-pointer`}
             >
               <img
                 className={`absolute h-64 ${item.margin}`}

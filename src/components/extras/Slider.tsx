@@ -23,11 +23,11 @@ export default function ImageSlider() {
         gradient={false}
       >
         {items.map((item, index) => (
-          <div key={index} className="mx-8 text-center">
+          <div key={index} className="mx-8 flex flex-col items-center justify-center">
             <img
               src={item.src}
               alt={item.name}
-              className="h-32 w-auto object-contain hover:scale-110 transition-all"
+              className="lg:h-32 h-20 w-auto object-contain hover:scale-110 transition-all"
             />
             <p className="text-xl text-black font-bold mt-2">{item.name}</p>{" "}
           </div>

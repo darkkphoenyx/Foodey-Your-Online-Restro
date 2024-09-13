@@ -109,10 +109,10 @@ export const FoodCard = () => {
               key={item.id}
               className="w-full sm:w-[280px] p-5 rounded-2xl bg-white shadow-lg border border-gray-300 hover:-translate-y-3 transition-all"
             >
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex justify-center items-center mb-4">
                 {item.image ? (
                   <img
-                    className="h-56 w-full"
+                    className="h-36 lg:w-full "
                     src={item.image}
                     alt={item.title}
                   />

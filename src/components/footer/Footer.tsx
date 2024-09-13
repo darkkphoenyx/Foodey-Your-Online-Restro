@@ -1,4 +1,3 @@
-// import BottomBanner from "../banner/BottomBanner";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
@@ -8,32 +7,32 @@ export const Footer = () => {
   return (
     <>
       <div className="pt-40 bg-white bg-[url(/assets/brush4.webp)] bg-no-repeat bg-cover bg-center">
-        <div className="upper-section container mx-auto px-10 flex flex-wrap items-center justify-between mb-10">
+        <div className=" container mx-auto px-4 md:px-10 flex flex-wrap gap-x-8 gap-y-2 items-center mb-10">
           <div className="logo">
             <Link
-              to={"/"}
-              className="font-extrabold text-5xl text-[--primary-text-color] italic"
+              to="/"
+              className="font-extrabold text-4xl text-[--primary-text-color] italic"
             >
               Foodey
             </Link>
           </div>
-          <div className="subsciption details">
-            <h3 className="text-2xl font-bold ">Subscription News</h3>
-            <p className="text-sm">Subscribe to our newsletter.</p>
+          <div className="">
+            <h3 className="text-[28px] font-bold ">Subscription News</h3>
+            <p className="text-[14px]">Subscribe to the weekly newslatter.</p>
           </div>
-          <div className="email-section flex gap-4 flex-wrap">
-            <input
-              className="px-6 py-3 outline-none w-[500px] rounded-full text-[16px]"
-              type="email"
-              placeholder="Enter Email Address"
-            />
-            <button className="text-[--third-text-color] bg-black px-4 py-2  rounded-3xl text-lg font-semibold hover:text-black hover:bg-transparent border border-black transition-all active:translate-y-0.5">
+          <input
+            className="px-6 py-3 outline-none w-[500px] lg:w-[620px] rounded-full text-[16px]"
+            type="email"
+            placeholder="Enter Email Address"
+          />
+          <Link to="#">
+            <button className="text-white mt-1 bg-black px-4 py-2 rounded-3xl text-lg font-semibold hover:text-black  hover:bg-transparent border border-black transition-all active:translate-y-0.5">
               Subscribe
             </button>
-          </div>
+          </Link>
         </div>
         <hr />
-        <div className="flex justify-center gap-16 flex-wrap mt-12 container mx-auto px-10 pb-12">
+        <div className="flex  gap-16 flex-wrap mt-12 container mx-auto px-4 lg:px-10 pb-12">
           <div className=" w-[250px]">
             <p className="mb-4 text-[#3c3c3c]">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -78,7 +77,7 @@ export const Footer = () => {
                     background: "#ff0000",
                   }}
                 />
-                Durga Mandir, Kapan-12, Kathmandu
+                Basundhara, Maharajgunj, Kathmandu
               </li>
               <li className="cursor-pointer gap-3 flex hover:text-[#ff0000] mb-2">
                 <CallOutlinedIcon
@@ -100,22 +99,22 @@ export const Footer = () => {
                     background: "#ff0000",
                   }}
                 />
-                foodienepal@gmail.com
+                foodeyrestro@gmail.com
               </li>
             </ul>
           </div>
         </div>
 
         <hr />
-        <div className="flex justify-between items-center container mx-auto px-10 py-4">
+        <div className="flex flex-wrap gap-y-4 justify-between items-center container mx-auto px-10 py-4">
           <div>
             <h1 className="hover:underline hover:text-[--primary-text-color] cursor-pointer">
               Copyrights © 2024 Foodey Restro. All rights Reserved
             </h1>
           </div>
-          <div className="flex gap-2">
+          <div className="flex md:gap-2 gap-7">
             <Link
-              className="border-r border-black pr-2 hover:underline hover:text-[--primary-text-color]"
+              className="border-r border-black pr-7 md:pr-2 hover:underline hover:text-[--primary-text-color]"
               to={"/"}
             >
               Privacy Policy

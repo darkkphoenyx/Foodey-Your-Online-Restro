@@ -32,7 +32,7 @@ export const FoodNews = () => {
             <span className="text-[--primary-text-color]">News</span>
           </h2>
         </div>
-        <p className="mt-4 text-lg">
+        <p className="mt-4 text-lg px-4">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
           consequuntur repudiandae quasi vero odit incidunt?
         </p>

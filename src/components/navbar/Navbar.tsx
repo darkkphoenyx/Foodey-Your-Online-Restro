@@ -6,7 +6,6 @@ import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { useState } from "react";
 
 export const Navbar = () => {
-  // Use state to control sidebar visibility
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -17,7 +16,7 @@ export const Navbar = () => {
     <>
       <section className="bg-white/85 h-[16vh] sticky top-0 z-50">
         <div className="banner border-b border-gray-400">
-          <div className="container mx-auto banner flex items-center justify-center md:justify-between py-1 px-10">
+          <div className="container mx-auto banner flex items-center justify-center md:justify-between py-1 px-4 md:px-10">
             <div className="left-section flex gap-1">
               <QueryBuilderIcon fontSize="small" />
               <p className="flex items-center gap-1">
@@ -40,7 +39,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="nav container mx-auto py-3 flex justify-between items-center px-10">
+        <div className="nav container mx-auto py-3 flex justify-between items-center px-4 md:px-10">
           <div className="logo">
             <Link
               to="/"
@@ -50,7 +49,6 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          {/* Nav Links for large screens */}
           <div className="nav-elements hidden md:block">
             <ul className="flex gap-20 font-medium justify-between text-lg">
               <li className="hover:text-[--primary-text-color]">
@@ -68,7 +66,6 @@ export const Navbar = () => {
             </ul>
           </div>
 
-          {/* Contact and buttons */}
           <div className="hidden md:block">
             <div className="contact flex gap-8">
               <div className="call flex items-center">
@@ -92,21 +89,19 @@ export const Navbar = () => {
               <button className="text-[--third-text-color] bg-[--primary-color] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-[--primary-text-color] hover:bg-white border border-[--primary-color] transition-all active:translate-y-0.5">
                 Order Online
               </button>
-
-              {/* Sidebar toggle button for mobile */}
             </div>
           </div>
           <div className="block md:hidden" onClick={toggleSidebar}>
-            <MenuIcon fontSize="large"></MenuIcon>
+            {isSidebarOpen ? (
+              <CloseIcon fontSize="large"></CloseIcon>
+            ) : (
+              <MenuIcon fontSize="large"></MenuIcon>
+            )}
           </div>
 
-          {/* Sidebar for mobile */}
           {isSidebarOpen && (
-            <div className="md:hidden block absolute bg-yellow-500/80 top-0 text-black right-0 h-[100vh] w-52 z-50">
+            <div className="md:hidden block absolute bg-white/70 top-20 text-black right-0 h-[100vh] w-48 z-50 text-right backdrop-blur-sm transition-all">
               <ul className="flex flex-col gap-4 p-4 text-xl font-medium">
-                <div onClick={toggleSidebar}>
-                  <CloseIcon fontSize="large"></CloseIcon>
-                </div>
                 <li>
                   <Link to="/" onClick={toggleSidebar}>
                     Home

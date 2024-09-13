@@ -28,7 +28,7 @@ export default function Testimonials() {
             Our Customer{" "}
             <span className="text-[--primary-text-color]">Feedbacks</span>
           </h2>
-          <p className="mt-4 text-lg w-full sm:w-4/5 mx-auto pb-8">
+          <p className="mt-4 text-lg w-full sm:w-4/5 mx-auto pb-8 px-4">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique,
             maxime adipisci? Aut quos quibusdam saepe iste. Molestiae eos
             dolorem velit.
@@ -41,7 +41,7 @@ export default function Testimonials() {
             key={item.id}
             className="flex justify-center w-full sm:w-auto hover:-skew-y-3 hover:skew-x-3 transition-all cursor-pointer"
           >
-            <div className="review border rounded-2xl border-gray-200 p-4 shadow-lg bg-white px-6 sm:px-10 w-full sm:w-[500px]">
+            <div className="review border rounded-2xl border-gray-200 p-4 shadow-lg bg-white px-6 sm:px-10 w-full sm:w-[500px] mx-4">
               <div className="rating flex items-center text-gray-500 mb-4">
                 {Array.from({ length: item.ratingStars }, (_, index) => (
                   <img

@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { Navbar } from "../components/navbar/Navbar";
 import { Footer } from "../components/footer/Footer";
 import { HomePage } from "../pages/HomePage";
+import { Menu } from "../pages/Menu";
+import ItemDetails from "../components/dynamic renderer/ItemDetails";
 
 export default function AppRoutes() {
   const location = useLocation();
@@ -24,7 +26,7 @@ export default function AppRoutes() {
     return () => clearTimeout(timer);
   }, [location]);
 
-  const noNavbarFooterRoutes = ["/login", "/register"];
+  const noNavbarFooterRoutes = ["/login"];
 
   const hideNavbarFooter = noNavbarFooterRoutes.includes(location.pathname);
 
@@ -33,6 +35,9 @@ export default function AppRoutes() {
       {!hideNavbarFooter && <Navbar />}
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/item-details" element={<ItemDetails />} />
+        <Route path="/menu" element={<Menu />} />
       </Routes>
       {!hideNavbarFooter && <Footer />}
     </>

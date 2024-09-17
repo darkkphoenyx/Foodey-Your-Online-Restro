@@ -1,3 +1,5 @@
+import { RenderStar } from "../dynamic renderer/RenderStar";
+
 const reviews = [
   {
     id: 1,
@@ -43,14 +45,7 @@ export default function Testimonials() {
           >
             <div className="review border rounded-2xl border-gray-200 p-4 shadow-lg bg-white px-6 sm:px-10 w-full sm:w-[500px] mx-4">
               <div className="rating flex items-center text-gray-500 mb-4">
-                {Array.from({ length: item.ratingStars }, (_, index) => (
-                  <img
-                    key={index}
-                    className="h-5 sm:h-6"
-                    src="/assets/star.webp"
-                    alt="rating"
-                  />
-                ))}
+                {RenderStar(item.ratingStars)}
               </div>
               <div className="note mb-5">
                 <p className="text-sm sm:text-base font-medium">

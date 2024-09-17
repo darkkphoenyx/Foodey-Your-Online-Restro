@@ -1,7 +1,7 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
-import { RenderStar } from "../dynamic renderer/RenderStar";
+import { RenderStar } from "../components/dynamic renderer/RenderStar";
 
 interface Card {
   id: number;
@@ -64,8 +64,56 @@ const cards: Card[] = [
     details:
       "Features a chicken burger, crispy fries, a cold drink, and ketchup for a satisfying meal.",
   },
+  {
+    id: 5,
+    title: "Grill Sandwich",
+    offer: "Get a 20% discount on First Order",
+    image: "/assets/sandwich.webp",
+    rate: "Rs. 129",
+    rating: 5,
+    restroName: "The Great Nepal Restro",
+    restroLocation: "Maharajgunj, Kathmandu",
+    details:
+      "A toasted sandwich with grilled fillings, offering a crispy texture and savory taste.",
+  },
+  {
+    id: 6,
+    title: "Pasta",
+    offer: "Get a 20% discount on First Order",
+    image: "/assets/pasta.webp",
+    rate: "Rs. 119",
+    rating: 4,
+    restroName: "The Great Nepal Restro",
+    restroLocation: "Maharajgunj, Kathmandu",
+    details:
+      "A classic Italian dish made with noodles, served with a variety of sauces.",
+  },
+  {
+    id: 7,
+    title: "Cold Drink",
+    offer: "Get a 10% discount on First Order",
+    image: "/assets/colddrink.webp",
+    rate: "Rs. 59",
+    rating: 4,
+    restroName: "The Great Nepal Restro",
+    restroLocation: "Maharajgunj, Kathmandu",
+    details:
+      "Refreshing beverages served chilled, perfect for quenching thirst on a hot day.",
+  },
+  {
+    id: 8,
+    title: "Pizza",
+    offer: "Get a 10% discount on First Order",
+    image: "/assets/pizza.webp",
+    rate: "Rs. 119",
+    rating: 5,
+    restroName: "The Great Nepal Restro",
+    restroLocation: "Maharajgunj, Kathmandu",
+    details:
+      " A baked flatbread topped with cheese, sauce, and various toppings, loved worldwide.",
+  },
 ];
-export const FoodCard: React.FC = () => {
+export const Menu: React.FC = () => {
   const navigate = useNavigate();
 
   const handleItemClick = (item: Card) => {
@@ -124,13 +172,6 @@ export const FoodCard: React.FC = () => {
             </li>
           ))}
         </ul>
-      </div>
-      <div className="flex items-center justify-center container mx-auto mb-2">
-        <Link to={"/menu"}>
-          <button className="text-[--third-text-color] bg-[--primary-color] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-[--primary-text-color] hover:bg-white border border-[--primary-color] transition-all active:translate-y-0.5">
-            View all Products
-          </button>
-        </Link>
       </div>
     </>
   );

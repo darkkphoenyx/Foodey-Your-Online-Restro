@@ -87,9 +87,9 @@ const renderStars = (rating: number) => {
 export const FoodCard = () => {
   return (
     <>
-      <div className="container mx-auto text-center py-16">
+      <div className="container mx-auto text-center py-12 lg:py-12 px-4 lg:px-10">
         <div className="w-4/5 mx-auto flex justify-center">
-          <h2 className="text-6xl font-extrabold italic">
+          <h2 className="text-5xl lg:text-6xl font-extrabold italic">
             Our Popular Tasty{" "}
             <span className="text-[--primary-text-color]">Foods</span>
           </h2>
@@ -107,12 +107,12 @@ export const FoodCard = () => {
           {cards.map((item) => (
             <li
               key={item.id}
-              className="w-full sm:w-[280px] p-5 rounded-2xl bg-white shadow-lg border border-gray-300 hover:-translate-y-3 transition-all"
+              className="w-full lg:mx-0 mx-4 sm:w-[280px] p-5 rounded-2xl bg-white shadow-lg border border-gray-300 hover:-translate-y-3 transition-all"
             >
               <div className="flex justify-center items-center mb-4">
                 {item.image ? (
                   <img
-                    className="h-36 lg:w-full "
+                    className="h-36  "
                     src={item.image}
                     alt={item.title}
                   />

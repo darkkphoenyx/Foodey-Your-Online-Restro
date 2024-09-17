@@ -6,7 +6,7 @@ export const Footer = () => {
   const listStyle = "cursor-pointer hover:text-[#ff0000]";
   return (
     <>
-      <div className="pt-40 bg-white bg-[url(/assets/brush4.webp)] bg-no-repeat bg-cover bg-center">
+      <div className="pt-28 lg:pt-40 bg-white bg-[url(/assets/brush4.webp)] bg-no-repeat bg-cover bg-center">
         <div className=" container mx-auto px-4 md:px-10 flex flex-wrap gap-x-8 gap-y-2 items-center mb-10">
           <div className="logo">
             <Link
@@ -33,7 +33,7 @@ export const Footer = () => {
         </div>
         <hr />
         <div className="flex  gap-16 flex-wrap mt-12 container mx-auto px-4 lg:px-10 pb-12">
-          <div className=" w-[250px]">
+          <div className=" lg:w-[250px]">
             <p className="mb-4 text-[#3c3c3c]">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Temporibus corrupti libero velit?
@@ -45,7 +45,7 @@ export const Footer = () => {
             <h3 className="text-[18px] font-bold">Opening Hours</h3>
             <p className="text-[#ff0000] font-bold">08:00 AM - 12:00 PM</p>
           </div>
-          <div className=" w-[250px]">
+          <div className=" lg:w-[250px]">
             <h3 className="mb-3 font-bold text-[18px]">Quick Links</h3>
             <ul className="flex flex-col gap-1 text-[#3c3c3c]">
               <li className={listStyle}>About Us</li>
@@ -55,7 +55,7 @@ export const Footer = () => {
               <li className={listStyle}>Contact Us</li>
             </ul>
           </div>
-          <div className=" w-[250px]">
+          <div className=" lg:w-[250px]">
             <h3 className="mb-3 font-bold text-[18px]">Our Menu</h3>
             <ul className="flex flex-col gap-1 text-[#3c3c3c]">
               <li className={listStyle}>Burgers</li>
@@ -65,7 +65,7 @@ export const Footer = () => {
               <li className={listStyle}>Cold Drinks</li>
             </ul>
           </div>
-          <div className=" w-[250px]">
+          <div className=" lg:w-[250px]">
             <h3 className="mb-3 font-bold text-[18px]">Get In Touch</h3>
             <ul className="flex flex-col gap-3 text-[#3c3c3c]">
               <li className="cursor-pointer gap-3 flex hover:text-[#ff0000]">
@@ -112,19 +112,23 @@ export const Footer = () => {
               Copyrights © 2024 Foodey Restro. All rights Reserved
             </h1>
           </div>
-          <div className="flex md:gap-2 gap-7">
-            <Link
-              className="border-r border-black pr-7 md:pr-2 hover:underline hover:text-[--primary-text-color]"
-              to={"/"}
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              className="hover:underline hover:text-[--primary-text-color]"
-              to={"/"}
-            >
-              Terms of Use
-            </Link>
+          <div className="flex justify-between w-full lg:w-56">
+            <div className="w-full">
+              <Link
+                className="hover:underline hover:text-[--primary-text-color]"
+                to={"/"}
+              >
+                Privacy Policy
+              </Link>
+            </div>
+            <div className="w-full text-end">
+              <Link
+                className="hover:underline hover:text-[--primary-text-color]"
+                to={"/"}
+              >
+                Terms of Use
+              </Link>
+            </div>
           </div>
         </div>
       </div>

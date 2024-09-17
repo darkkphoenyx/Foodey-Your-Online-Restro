@@ -24,7 +24,7 @@ export default function Testimonials() {
     <div className="py-40 bg-white bg-[url(/assets/brush2.webp)] bg-no-repeat bg-cover bg-center">
       <div className="container mx-auto text-center">
         <div className="w-full mx-auto flex flex-col justify-center">
-          <h2 className="text-6xl font-extrabold italic">
+          <h2 className="text-5xl lg:text-6xl font-extrabold italic">
             Our Customer{" "}
             <span className="text-[--primary-text-color]">Feedbacks</span>
           </h2>

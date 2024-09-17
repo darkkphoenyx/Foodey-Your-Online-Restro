@@ -25,9 +25,9 @@ const cards = [
 export const FoodNews = () => {
   return (
     <>
-      <div className="container mx-auto text-center py-12">
+      <div className="container mx-auto text-center py-4 lg:py-12">
         <div className="mx-auto flex justify-center">
-          <h2 className="text-6xl font-extrabold italic">
+          <h2 className="text-5xl lg:text-6xl font-extrabold italic">
             Our Latest Food{" "}
             <span className="text-[--primary-text-color]">News</span>
           </h2>
@@ -45,7 +45,7 @@ export const FoodNews = () => {
           {cards.map((item) => (
             <li
               key={item.id}
-              className="w-[385px] rounded-2xl pb-4  shadow-lg border border-gray-300 "
+              className="mx-4 lg:mx-0 w-[385px] rounded-2xl pb-4  shadow-lg border border-gray-300 "
             >
               <div className="overflow-hidden rounded-t-2xl">
                 <img
@@ -62,7 +62,7 @@ export const FoodNews = () => {
               </div>
               <a
                 href="#"
-                className="pl-4 underline text-gray-400 hover:text-[--primary-text-color] font-bold"
+                className="pl-4 underline hover:text-[--primary-text-color] font-bold"
                 rel="noopener noreferrer"
               >
                 Read More

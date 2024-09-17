@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <section className="hero-section h-[84vh] overflow-hidden relative">
+    <section className="hero-section h-auto lg:h-[84vh] overflow-hidden relative">
       <div className="corrainder-and-chilly-leafs">
         <img
           className="h-24 absolute -left-20"
@@ -24,12 +24,12 @@ export const Hero = () => {
       </div>
       <div className="container mx-auto grid grid-cols-12 items-center overflow-hidden relative px-4 md:px-10 py-8 text-center md:text-left">
         <div className="col-span-12 md:col-span-6 w-full z-10 flex flex-col justify-center items-center md:items-start">
-          <h1 className="text-7xl font-extrabold italic">
+          <h1 className="text-6xl lg:text-7xl font-extrabold italic">
             Welcome to <br />
             <span className="text-[--primary-text-color]">Foodey</span>
           </h1>
           <img
-            className="absolute h-6 left-24 md:left-10 top-40 lg:top-52 -z-10"
+            className="absolute h-6 left-20 md:left-10 top-36 lg:top-52 -z-10"
             src="/assets/brush3.webp"
             alt="brush stroke"
           />
@@ -38,7 +38,7 @@ export const Hero = () => {
             deleniti earum incidunt obcaecati, libero dolorum tenetur quod
             cupiditate soluta numquam.
           </p>
-          <div className="md:mt-8 mt-12">
+          <div className="mt-12">
             <button className=" text-[--black] bg-[--accent-color] px-4 py-2 rounded-3xl text-lg font-bold hover:text-[--accent-color] hover:bg-white border border-[--accent-color] transition-all active:translate-y-0.5 mr-4">
               Order Now
             </button>

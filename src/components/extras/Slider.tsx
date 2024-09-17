@@ -15,7 +15,7 @@ export default function ImageSlider() {
   ];
 
   return (
-    <section className="bg-[url(/assets/brush2.webp)] bg-no-repeat bg-cover bg-center text-white py-8">
+    <section className="bg-[url(/assets/brush2.webp)] bg-no-repeat bg-cover bg-center text-white py-8 lg:py-12">
       <Marquee
         className="h-max overflow-hidden gap-4"
         speed={50}
@@ -29,7 +29,7 @@ export default function ImageSlider() {
               alt={item.name}
               className="lg:h-32 h-20 w-auto object-contain hover:scale-110 transition-all"
             />
-            <p className="text-xl text-black font-bold mt-2">{item.name}</p>{" "}
+            <p className="text-sm lg:text-xl text-black font-bold mt-2">{item.name}</p>{" "}
           </div>
         ))}
       </Marquee>

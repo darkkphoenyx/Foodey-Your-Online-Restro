@@ -36,7 +36,7 @@ const items = [
 export const AboutFoods = () => {
   return (
     <>
-      <section className="container mx-auto text-white px-6 py-12">
+      <section className="container mx-auto text-white px-4 lg:px-6 py-8 lg:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 py-12 lg:px-4 ">
           {items.map((item) => (
             <div
@@ -77,7 +77,7 @@ export const AboutFoods = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start justify-center col-span-12 md:col-span-6 w-full z-10 sm:text-center lg:text-start text-center">
-            <h1 className="text-6xl md:text-7xl font-extrabold italic text-center mt-8 md:mt-0">
+            <h1 className="text-5xl lg:text-6xl md:text-7xl font-extrabold italic text-center mt-8 md:mt-0">
               About <span className="text-[--primary-text-color]">Foodey</span>
             </h1>
             <p className="text-lg mt-8 md:mt-4 mb-4">
@@ -105,7 +105,7 @@ export const AboutFoods = () => {
                 Made By Fresh Ingredients
               </li>
             </ul>
-            <div>
+            <div className="mt-4 lg:mt-8">
               <button className="mt-4 text-[--black] bg-[--accent-color] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-[--accent-color] hover:bg-white border border-[--accent-color] transition-all active:translate-y-0.5 mr-4">
                 Order Now
               </button>

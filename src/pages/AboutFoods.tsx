@@ -37,7 +37,10 @@ export const AboutFoods = () => {
   return (
     <>
       <section className="container mx-auto text-white px-4 lg:px-6 py-8 lg:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 py-12 lg:px-4 ">
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 md:grid-cols-3 py-12 lg:px-4 "
+        >
           {items.map((item) => (
             <div
               key={item.id}
@@ -56,7 +59,9 @@ export const AboutFoods = () => {
                 discount <br />
                 {item.description}
               </p>
-              <p className="mt-4 md:text-4xl text-2xl font-extrabold">{item.price}</p>
+              <p className="mt-4 md:text-4xl text-2xl font-extrabold">
+                {item.price}
+              </p>
             </div>
           ))}
         </div>
@@ -65,11 +70,18 @@ export const AboutFoods = () => {
         <div className="py-12 grid grid-cols-1 md:grid-cols-12 items-center gap-8 text-black">
           <div className="col-span-12 md:col-span-6 items-center flex justify-center relative">
             <img
+              data-aos="fade-up"
+              data-aos-delay="20"
+              data-aos-duration="1000"
+              data-aos-once="true"
               className="z-10 hover:scale-105 transition-all h-40 md:h-full"
               src="/assets/combo2.webp"
               alt="hero picture"
             />
             <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
               className="absolute overflow-hidden top-1 lg:top-14"
               src="/assets/brush.webp"
               alt="hero background"
@@ -77,10 +89,21 @@ export const AboutFoods = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start justify-center col-span-12 md:col-span-6 w-full z-10 sm:text-center lg:text-start text-center">
-            <h1 className="text-5xl lg:text-6xl md:text-7xl font-extrabold italic text-center mt-8 md:mt-0">
+            <h1
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1000"
+              className="text-5xl lg:text-6xl md:text-7xl font-extrabold italic text-center mt-8 md:mt-0"
+            >
               About <span className="text-[--primary-text-color]">Foodey</span>
             </h1>
-            <p className="text-lg mt-8 md:mt-4 mb-4">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="10"
+              data-aos-once="true"
+              data-aos-duration="1000"
+              className="text-lg mt-8 md:mt-4 mb-4"
+            >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Exercitationem, cumque id! Accusantium perferendis laborum error
               illum? Aliquid doloribus sapiente quidem atque a aut, culpa eos
@@ -92,24 +115,54 @@ export const AboutFoods = () => {
               amet,
             </p>
             <ul>
-              <li className="flex items-center gap-2 pb-4 mt-4">
+              <li
+                data-aos="fade-up"
+                data-aos-delay="10"
+                data-aos-once="true"
+                data-aos-duration="1000"
+                className="flex items-center gap-2 pb-4 mt-4"
+              >
                 <CheckCircleIcon style={{ color: "red" }} />
                 Delicious & Healthy Foods
               </li>
-              <li className="flex items-center gap-2 pb-4">
+              <li
+                data-aos="fade-up"
+                data-aos-delay="10"
+                data-aos-once="true"
+                data-aos-duration="1000"
+                className="flex items-center gap-2 pb-4"
+              >
                 <CheckCircleIcon style={{ color: "red" }} />
                 Best Price & Offers
               </li>
-              <li className="flex items-center gap-2 pb-4">
+              <li
+                data-aos="fade-up"
+                data-aos-delay="10"
+                data-aos-once="true"
+                data-aos-duration="1000"
+                className="flex items-center gap-2 pb-4"
+              >
                 <CheckCircleIcon style={{ color: "red" }} />
                 Made By Fresh Ingredients
               </li>
             </ul>
             <div className="mt-4 lg:mt-8">
-              <button className="mt-4 text-[--black] bg-[--accent-color] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-[--accent-color] hover:bg-white border border-[--accent-color] transition-all active:translate-y-0.5 mr-4">
+              <button
+                data-aos="fade-up"
+                data-aos-delay="10"
+                data-aos-once="true"
+                data-aos-duration="1000"
+                className="mt-4 text-[--black] bg-[--accent-color] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-[--accent-color] hover:bg-white border border-[--accent-color] transition-all active:translate-y-0.5 mr-4"
+              >
                 Order Now
               </button>
-              <button className="text-[--black] bg-[--white] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-white hover:bg-black border border-[--black] transition-all active:translate-y-0.5">
+              <button
+                data-aos="fade-up"
+                data-aos-delay="10"
+                data-aos-once="true"
+                data-aos-duration="1000"
+                className="text-[--black] bg-[--white] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-white hover:bg-black border border-[--black] transition-all active:translate-y-0.5"
+              >
                 Read More
               </button>
             </div>

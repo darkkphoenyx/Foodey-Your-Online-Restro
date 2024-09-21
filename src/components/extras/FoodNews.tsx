@@ -27,18 +27,24 @@ export const FoodNews = () => {
     <>
       <div className="container mx-auto text-center py-4 lg:py-12">
         <div className="mx-auto flex justify-center">
-          <h2 className="text-5xl lg:text-6xl font-extrabold italic">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className="text-5xl lg:text-6xl font-extrabold italic"
+          >
             Our Latest Food{" "}
             <span className="text-[--primary-text-color]">News</span>
           </h2>
         </div>
-        <p className="mt-4 text-lg px-4">
+        <p data-aos="fade-up" data-aos-delay="50" className="mt-4 text-lg px-4">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
           consequuntur repudiandae quasi vero odit incidunt?
         </p>
       </div>
       <div className="card-renderer">
         <ul
+          data-aos="fade-up"
+          data-aos-delay="50"
           role="list"
           className="container w-full mx-auto py-4 flex flex-wrap gap-6 items-center justify-center"
         >

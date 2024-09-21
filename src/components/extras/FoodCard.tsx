@@ -76,25 +76,31 @@ export const FoodCard: React.FC = () => {
     <>
       <div className="container mx-auto text-center py-12 lg:py-12 px-4 lg:px-10">
         <div className="w-4/5 mx-auto flex justify-center">
-          <h2 className="text-5xl lg:text-6xl font-extrabold italic">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className="text-5xl lg:text-6xl font-extrabold italic"
+          >
             Our Popular Tasty{" "}
             <span className="text-[--primary-text-color]">Foods</span>
           </h2>
         </div>
-        <p className="mt-4 text-lg">
+        <p data-aos="fade-up" data-aos-delay="50" className="mt-4 text-lg">
           Have a glance at our best sellers and popular collection of this
           season
         </p>
       </div>
       <div className="card-renderer">
         <ul
+          data-aos="fade-up"
+          data-aos-delay="50"
           role="list"
           className="container mx-auto pb-10 flex flex-wrap gap-6 items-center justify-center"
         >
           {cards.map((item) => (
             <li
               key={item.id}
-              className="w-full lg:mx-0 mx-4 sm:w-[280px] p-5 rounded-2xl bg-white shadow-lg border border-gray-300 hover:-translate-y-3 transition-all"
+              className="w-full  lg:mx-0 mx-4 sm:w-[280px] p-5 rounded-2xl bg-white shadow-lg border border-gray-300 hover:-translate-y-3 transition-all"
               onClick={() => handleItemClick(item)} // Navigate to item details on click
             >
               <div className="flex justify-center items-center mb-4">
@@ -125,7 +131,11 @@ export const FoodCard: React.FC = () => {
           ))}
         </ul>
       </div>
-      <div className="flex items-center justify-center container mx-auto mb-2">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="50"
+        className="flex items-center justify-center container mx-auto mb-2"
+      >
         <Link to={"/menu"}>
           <button className="text-[--third-text-color] bg-[--primary-color] px-4 py-2 rounded-3xl text-lg font-semibold hover:text-[--primary-text-color] hover:bg-white border border-[--primary-color] transition-all active:translate-y-0.5">
             View all Products

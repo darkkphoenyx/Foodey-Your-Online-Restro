@@ -26,18 +26,30 @@ export default function Testimonials() {
     <div className="py-40 bg-white bg-[url(/assets/brush2.webp)] bg-no-repeat bg-cover bg-center">
       <div className="container mx-auto text-center">
         <div className="w-full mx-auto flex flex-col justify-center">
-          <h2 className="text-5xl lg:text-6xl font-extrabold italic">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className="text-5xl lg:text-6xl font-extrabold italic"
+          >
             Our Customer{" "}
             <span className="text-[--primary-text-color]">Feedbacks</span>
           </h2>
-          <p className="mt-4 text-lg w-full sm:w-4/5 mx-auto pb-8 px-4">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className="mt-4 text-lg w-full sm:w-4/5 mx-auto pb-8 px-4"
+          >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique,
             maxime adipisci? Aut quos quibusdam saepe iste. Molestiae eos
             dolorem velit.
           </p>
         </div>
       </div>
-      <ul className="flex flex-wrap items-center justify-center gap-8 sm:gap-10">
+      <ul
+        data-aos="fade-up"
+        data-aos-delay="50"
+        className="flex flex-wrap items-center justify-center gap-8 sm:gap-10"
+      >
         {reviews.map((item) => (
           <li
             key={item.id}

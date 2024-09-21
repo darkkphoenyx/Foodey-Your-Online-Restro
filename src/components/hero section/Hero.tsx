@@ -1,7 +1,18 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      delay: 100, // values from 0 to 3000, with step 50ms
+      once: true, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <section className="hero-section h-auto lg:h-[84vh] overflow-hidden relative">
-      <div className="corrainder-and-chilly-leafs">
+      <div>
         <img
           className="h-24 absolute -left-20"
           src="/assets/leaf.webp"

@@ -18,7 +18,11 @@ export const FoodGallary = () => {
     <>
       <div className="text-center py-20">
         <div className="mx-auto flex justify-center mb-12">
-          <h2 className="text-5xl lg:text-6xl font-extrabold italic">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className="text-5xl lg:text-6xl font-extrabold italic"
+          >
             Food <span className="text-[--primary-text-color]">Gallery</span>
           </h2>
         </div>
@@ -37,7 +41,9 @@ export const FoodGallary = () => {
                   className="w-56 lg:w-80 h-auto object-cover hover:scale-110 transition-all"
                 />
               </div>
-              <p className="text-sm lg:text-xl text-black font-bold mt-2">{item.name}</p>{" "}
+              <p className="text-sm lg:text-xl text-black font-bold mt-2">
+                {item.name}
+              </p>{" "}
             </div>
           ))}
         </Marquee>
